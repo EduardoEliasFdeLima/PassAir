@@ -272,3 +272,15 @@ canvas {
   }
       
 }
+
+
+@media screen and (max-width: 400px) {      
+  .line{
+    padding: 10px 15px 10px 15px;
+  }
+    
+  .line-top .title-right{
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+}

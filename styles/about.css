@@ -130,3 +130,15 @@
         margin-top: 50px;
     }
 }
+
+
+
+@media screen and (max-width: 400px) {      
+        
+    .textos{
+        font-size: 15px;
+        
+    }
+
+
+}
