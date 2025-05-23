@@ -86,14 +86,14 @@ button a{
     font-size: 100px;
 }   
 
-.centralize h1::before{
+.texto-home h1::before{
     position: absolute;
     top: 50px;
     content: '';
     display: inline-block;
     width: 300px;
     height: 7PX;
-    background-color: #DEDEDE;
+    /* background-color: #cf1212; */
     z-index: -1;
 }
 

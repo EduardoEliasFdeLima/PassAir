@@ -63,8 +63,8 @@ header.dark{
 }
 
 .centralize h1::before{
-    opacity: .8;
-    background-color: #313131;
+    opacity: .3;
+    background-color: #5a5a5a;
 }
 
 #infos.light{
