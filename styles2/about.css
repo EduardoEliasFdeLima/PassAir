@@ -1,0 +1,132 @@
+@import url(styles.css);
+
+.main-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.text-box{
+    height: max-content;
+    border-left: 6px solid #4B8B94;
+    font-family: 'Inria Sans';
+    font-size: 22px;
+    width: 40%;
+    padding: 10px 20px;
+}
+
+.text-box p:nth-child(1){
+     padding-bottom: 40px;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.img-zoom{
+    width: 180px;
+    height: 280px;
+    overflow: hidden;  
+    border-radius: 10px;
+    transition: .5s ease-in all;  
+}
+
+.img-zoom img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-zoom img:hover {
+    transition: .2s ease-in;
+    transform: scale(1.05);
+}
+
+.textos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px; 
+    justify-content: space-evenly;
+    font-family: 'Monda';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+#about{
+    position: relative;
+}
+
+#fnd{
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+}
+
+#fnd.dark{
+    opacity: .4;
+}
+
+
+@media screen and (max-width: 1000px) {   
+    .main-about{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+
+    .text-box{
+        height: max-content;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    #fnd{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {        
+    .img-zoom{
+        width: auto;
+        height: auto;
+    }
+
+    .imagens{
+        justify-content: space-between;
+        gap: 10px;
+    }
+ 
+    .textos{
+        margin-top: 30px; 
+        justify-content: space-evenly;
+        font-size: 18px;
+        gap: 10px;
+        padding-left: 20px;
+    }
+        
+    .text-box p{
+        font-size: 18px;
+    }
+   
+    .text-box p:nth-child(1){
+        padding-bottom: 20px;
+    }
+
+    .text-box{
+        border-left: 4px solid #4B8B94;
+    }
+
+    .main-about{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+
+h1{
+    position: relative;
+    font-family: 'Monda';
+    font-size: clamp(32px, 8vw, 86px);
+  
+    text-transform: uppercase;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    padding: 60px 120px;
+}
+
+section h1{
+    font-size: clamp(18px, 6vw, 56px);
+}
+
+img, button{
+    user-select: none;
+}
+
+body ::selection{
+    background-color: #2c373b;
+    color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+    section{
+        padding: 60px 80px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    section{
+        min-height: max-content;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    section{
+        padding: 60px 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    section{
+        padding: 40px 30px;
+        min-height: 79vh;
+        height: max-content;
+    }
+}

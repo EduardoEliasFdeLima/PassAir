@@ -1,0 +1,302 @@
+@import url(styles.css);
+
+header{
+    position: relative;
+}
+
+header nav{
+    margin-top: 10px;
+    margin-left: 120px;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 20px;
+    font-family: 'Monda';
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+button a{
+    color: #fff;
+}
+
+.centralize{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 120px;
+    gap: 150px;
+}
+
+.airplane{
+    z-index: 2;
+    justify-self: right;
+    float: right;
+}
+
+.airplane img{
+    width: 90%;
+}
+
+.bg-skye{
+    position: absolute;
+    background-color: none;
+    width: 90%;
+    right: 0;
+    height: 100vh;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.bg-skye.light{
+    background: url('../imgs/skye.png') no-repeat center/cover;
+}
+
+.bg-skye.dark{
+    background: url('../imgs/skye-nightt.png') no-repeat center/cover;
+}
+
+.texto-home{
+    margin-top: -100px;
+    display: block;
+}
+
+.texto-home h1{
+    font-family: 'Inria serif';
+    font-size: 100px;
+}   
+
+.centralize h1::before{
+    position: absolute;
+    top: 50px;
+    content: '';
+    display: inline-block;
+    width: 300px;
+    height: 7PX;
+    background-color: #DEDEDE;
+    z-index: -1;
+}
+
+.texto-home h3{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.texto-home button{
+    margin-top: 20px;
+    background: linear-gradient(35deg, #61A6B0, #37737C);
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-family: 'Monda';   
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px 0px #0000001e;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.texto-home button:hover{
+    background: linear-gradient(35deg, #538e97, #254e54);
+}
+
+.arrow{
+    position: absolute;
+    bottom: 70px;
+    left: 30%;
+    transform: rotate(-75deg);
+}
+
+.arrow i{
+    font-size: 150px;
+}
+
+.arrow.light i{
+    color: #EAEAEA;
+}
+
+.arrow.dark i{
+    color: #302E2E;
+}
+
+@media screen and (max-width: 1300px) {      
+    header nav{
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+
+    .centralize{
+        padding: 0 80px;
+        padding-right: 0;
+        gap: 80px;
+    }
+
+    .airplane{
+        width: max-content;    
+    }
+
+    .airplane img{
+        width: 90%;
+    }
+    
+    header nav ul li{
+        font-size: 19px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header nav{
+        margin-left: 0px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
+        
+    header nav ul li{
+        font-size: 18px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .centralize{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        gap: 0px;
+        padding: 80px;
+    }
+        
+    .bg-skye{
+        position: absolute;
+        bottom: -45%;
+        background-color: none;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        z-index: -2;
+        clip-path: polygon(0 26%, 100% 7%, 100% 100%, 0% 100%);
+    }
+
+    .airplane{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        justify-self: normal;
+        float: none;
+    }
+
+    .airplane img{
+        width: 100%;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .texto-home{
+        margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+      header nav{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+     .centralize{
+        padding: 80px 50px;
+        gap: 50px;
+     }
+
+    .texto-home h1{
+        font-size: 65px;
+    }  
+
+    .texto-home h1::before{
+        top: 30px;
+        width: 230px;
+        height: 7px;
+    }
+
+    .texto-home h3{
+        font-size: 40px;
+    }
+        
+    header nav ul li{
+        margin: 13px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .texto-home button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+     .airplane{
+        width: 90%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .logo img{
+        width: 35px;
+    }
+
+    .airplane{
+        width: 100%;
+    }
+    header nav{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .centralize{
+        padding: 80px 30px;
+        gap: 50px;
+    }
+
+    header nav ul li{
+        margin: 8px;
+        font-size: 12px;
+    }
+
+}

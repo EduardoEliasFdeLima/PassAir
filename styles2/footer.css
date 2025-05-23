@@ -1,0 +1,118 @@
+footer{
+    position: relative;
+    padding: 60px 120px;
+    width: 100%;
+    background: #3e5a67;
+    height: 400px;
+}
+
+footer h1{
+    font-family: 'Inria Serif';
+    font-size: 45px;
+    color: #EDEDED;
+}
+
+footer p{
+    color: #EDEDED;
+    font-family: 'Inria Sans';
+}
+
+.contain-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociais i{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 15px;
+}
+
+.redes-sociais i:hover{
+    transform: scale(1.05);
+}
+
+.top-lft{
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.top-lft img{
+    width: auto;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.lft-footer{
+    width: 50%;   
+}
+
+#copyy{
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+   footer{
+     padding: 60px 80px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   footer{
+        padding: 60px 80px;
+   }
+}
+
+@media screen and (max-width: 700px) {
+    footer{
+        padding: 60px 50px;
+    }
+        
+    .top-lft{
+        padding-bottom:10px;
+    }
+   
+    .lft-footer{
+        width: 80%;   
+    }
+        
+    #copyy{
+        font-size: 10px;
+    }
+        
+    footer h1{
+        font-size: 40px;
+    }
+        
+    footer p{
+       font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+     footer{
+        padding: 40px 30px;
+    }
+
+    .contain-footer{
+        flex-direction: column;
+    }
+
+    .redes-sociais{
+        margin-top: 50px;
+        flex-direction: row;
+    }
+     
+    .lft-footer{
+        width: 100%;   
+    }
+}

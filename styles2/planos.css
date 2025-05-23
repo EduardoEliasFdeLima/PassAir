@@ -1,0 +1,202 @@
+#planos{
+    height: max-content;
+    min-height: 70vh;
+    padding-bottom: 60px;
+}
+
+.planos-line{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+    row-gap: 40px;
+    padding-bottom: 100px;
+}
+
+.card{
+    position: relative;
+    width: 230px;
+    height: 340px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 4px 2px #00000020;
+    font-family: 'Inria Sans';
+}
+
+
+#planos.light .card{
+    background-color: #fff;
+}
+
+
+#planos.dark .card{
+    background-color: #2C2E2F;
+}
+
+#planos.dark .card h4{
+    color: #fff;
+}
+
+.card:hover{
+    animation: up .3s;
+}
+
+@keyframes up {
+    50%{
+        margin-top: -5px;
+    }
+
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.line-top-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.card h4{
+    font-size: 18px;
+}
+
+.card h3{
+    font-size: 11px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+.card img{
+    width: 100%;
+    transform: scale(1.1);
+    height: auto;
+}
+
+.body-card{
+    padding: 20px 15px;
+}
+
+.card button{
+    position: absolute;
+    bottom: 15px;
+    transform: translateX(-50%);
+    left: 50%;
+    cursor: pointer;
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(35deg, #61A6B0, #37737C);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Monda';
+    font-weight: bold;
+}
+
+.card p{
+    font-family: 'Inria Sans';
+    color: #4d4d4d;
+}
+
+.price{
+    font-weight: 700;
+    color: #57A6B1;
+}
+
+@media screen and (max-width: 900px) {     
+    .card:hover{
+        animation: none;
+    }
+            
+    .planos-line{
+        margin-top: 60px;
+        gap: 10px;      
+        row-gap: 20px;
+    }
+
+    .card{
+        position: relative;
+        width: 180px;
+        height: 270px;
+    }
+        
+    .card p{
+        font-size: 9px;
+    }
+
+    .card h4{
+        font-size: 15px;
+    }
+
+    .card h3{
+        font-size: 9px;
+        color: #BDBDBD;
+        text-transform: uppercase;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+    .card button{
+        position: absolute;
+        bottom: 10px;
+        width: 70%;
+        height: 20px;
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 48%;
+        height: 290px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .card{
+        width: 48%;
+        height: 270px;
+    }
+
+    .planos-line{
+        justify-content: space-between;
+    }
+    
+    .body-card{
+        padding: 15px 10px;
+    }
+
+         
+    .card p{
+        font-size: 8px;
+    }
+
+    .card h4{
+        font-size: 14px;
+    }
+
+    .price{
+        font-size: 13px;
+    }
+
+    .card h3{
+        font-size: 8px;
+        color: #BDBDBD;
+        text-transform: uppercase;
+    }
+}
