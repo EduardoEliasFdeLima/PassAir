@@ -23,7 +23,6 @@ h1{
     position: relative;
     font-family: 'Monda';
     font-size: clamp(32px, 8vw, 86px);
-  
     text-transform: uppercase;
 }
 
@@ -32,7 +31,7 @@ html{
 }
 
 section{
-    height: 100vh;
+    height: max-content;
     padding: 60px 120px;
 }
 
