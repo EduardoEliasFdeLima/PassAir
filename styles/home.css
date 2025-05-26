@@ -21,9 +21,13 @@ header nav ul li{
     margin: 20px;
     font-family: 'Monda';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+}
+ 
+.logo img{
+    width: 60px;
 }
 
 a{
