@@ -59,6 +59,19 @@ footer p{
     bottom: 20px;
 }
 
+
+@media screen and (max-width: 2560px) {
+   footer{
+        padding: 60px 200px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    footer{
+        padding: 60px 140px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
    footer{
      padding: 60px 80px;

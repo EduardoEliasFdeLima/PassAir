@@ -85,6 +85,31 @@
     margin-left: 220px;
 }
 
+
+
+
+@media screen and (max-width: 2560px) {
+     #passos h1{
+        margin-left: 200px;
+    }
+
+     .line-passos{
+        padding: 50px 200px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+
+     #passos h1{
+        margin-left: 140px;
+    }
+
+     .line-passos{
+        padding: 50px 140px;
+    }
+}
+
+
 @media screen and (max-width: 1300px) {
     .passo,.passo:nth-child(2), .passo:nth-child(3){
         margin-left: 0;

@@ -48,6 +48,26 @@ body ::selection{
     color: #fff;
 }
 
+
+
+
+
+@media screen and (max-width: 2560px) {
+    section{
+        padding: 60px 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 1900px) {
+    section{
+        padding: 60px 140px;
+    }
+}
+
+
+
 @media screen and (max-width: 1300px) {
     section{
         padding: 60px 80px;

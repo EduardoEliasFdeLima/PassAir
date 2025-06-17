@@ -146,6 +146,32 @@ button a{
     color: #302E2E;
 }
 
+
+
+
+@media screen and (max-width: 2560px) {
+
+    header nav{
+        margin-left: 200px;
+    }
+
+    .centralize{
+        padding: 0 200px;
+        gap: 250px;      
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .centralize{
+        padding: 60px 140px;
+        gap: 100px;
+    }
+     header nav{
+        margin-left: 140px;
+    }
+}
+
+
 @media screen and (max-width: 1300px) {      
     header nav{
         margin-top: 10px;
@@ -194,7 +220,7 @@ button a{
         flex-direction: column;
         justify-content: left;
         align-items: start;
-        gap: 0px;
+        gap: 150px;
         padding: 80px;
     }
         
