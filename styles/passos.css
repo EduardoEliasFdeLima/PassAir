@@ -39,7 +39,7 @@
 }
 
 .passo p{
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #passos.light .line-passos{
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1920px) {
 
      #passos h1{
         margin-left: 140px;
@@ -110,7 +110,7 @@
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .passo,.passo:nth-child(2), .passo:nth-child(3){
         margin-left: 0;
     }
@@ -124,7 +124,23 @@
     }
 }
 
+
+
+@media screen and (max-width: 1300px) {
+    
+    .imagem-passos img{
+        width: auto;
+        height: 400px;
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
+     #passos{
+        min-height: 750px;
+    }
+
+    
     #passos{
         padding-bottom: 0;
     }
@@ -166,6 +182,11 @@
 
 
 @media screen and (max-width: 700px) {
+
+    #passos{
+        min-height: 750px;
+    }
+
     #passos h1{
         margin-left: 50px;
     }
@@ -205,7 +226,7 @@
     }
 
     .passo p{
-        font-size: 16px;
+        font-size: 12px;
     }
     .passo{
         margin: 10px;
@@ -219,7 +240,14 @@
 
     .imagem-passos img{
         width: auto;
-        height: 380px;
+        height: 360px;
+    }
+
+     .square-passos{
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+        border: 1px solid #fff;
     }
 
 }

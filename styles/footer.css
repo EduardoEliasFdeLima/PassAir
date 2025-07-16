@@ -3,18 +3,21 @@ footer{
     padding: 60px 120px;
     width: 100%;
     background: #3e5a67;
-    height: 400px;
+    height: 600px;
 }
 
 footer h1{
     font-family: 'Inria Serif';
-    font-size: 45px;
+    font-size: clamp(18px, 6vw, 56px);
     color: #EDEDED;
 }
+
+ 
 
 footer p{
     color: #EDEDED;
     font-family: 'Inria Sans';
+    font-size: 20px;
 }
 
 .contain-footer{
@@ -66,16 +69,25 @@ footer p{
     }
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1920px) {
     footer{
         padding: 60px 140px;
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
    footer{
      padding: 60px 80px;
    }
+
+    footer p{
+       font-size: 18px;
+       line-height: 1.6rem;
+    }
+
+    /* footer h1{
+        font-size: 45px;
+    } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -101,9 +113,9 @@ footer p{
         font-size: 10px;
     }
         
-    footer h1{
+    /* footer h1{
         font-size: 40px;
-    }
+    } */
         
     footer p{
        font-size: 12px;

@@ -21,13 +21,13 @@ header nav ul li{
     margin: 20px;
     font-family: 'Monda';
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     text-transform: uppercase;
     cursor: pointer;
 }
  
 .logo img{
-    width: 60px;
+    width: 100px;
 }
 
 a{
@@ -50,7 +50,9 @@ button a{
     flex-direction: row;
     align-items: center;
     padding: 0 120px;
-    gap: 150px;
+    justify-content: space-between;
+    padding-right: 25%;
+    /* gap: 150px; */
 }
 
 .airplane{
@@ -60,7 +62,7 @@ button a{
 }
 
 .airplane img{
-    width: 90%;
+    width: 130%;
 }
 
 .bg-skye{
@@ -87,7 +89,7 @@ button a{
 
 .texto-home h1{
     font-family: 'Inria serif';
-    font-size: 100px;
+    font-size: 150px;
 }   
 
 .texto-home h1::before{
@@ -104,7 +106,7 @@ button a{
 .texto-home h3{
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .texto-home button{
@@ -117,7 +119,7 @@ button a{
     border-radius: 7px;
     font-family: 'Monda';   
     font-weight: 700;
-    font-size: 15px;
+    font-size: 25px;
     box-shadow: 0px 4px 4px 0px #0000001e;
     cursor: pointer;
     transition: all 1s ease;
@@ -157,11 +159,20 @@ button a{
 
     .centralize{
         padding: 0 200px;
-        gap: 250px;      
+        /* padding-right: 500px; */
+        padding-right: 20%;
+        gap: 0px;      
+        justify-content: space-between;
     }
+
+    .airplane img{
+        width: 120%;
+    }
+
+   
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1920px) {
     .centralize{
         padding: 60px 140px;
         gap: 100px;
@@ -169,10 +180,35 @@ button a{
      header nav{
         margin-left: 140px;
     }
+
+    .airplane img{
+        width: 90%;
+    }
+
+    .texto-home h1{
+        font-size: 100px;
+    }   
+
+    .texto-home h3{
+        font-size: 50px;
+    }
+
+    .texto-home button{
+        font-size: 20px;
+    }
+
+    header nav ul li{
+        font-size: 20px;
+    }
+        
+    .logo img{
+        width: 70px;
+    }
+
 }
 
 
-@media screen and (max-width: 1300px) {      
+@media screen and (max-width: 1500px) {      
     header nav{
         margin-top: 10px;
         margin-left: 80px;
@@ -189,13 +225,22 @@ button a{
     }
 
     .airplane img{
-        width: 90%;
+        width: 80%;
     }
     
     header nav ul li{
         font-size: 19px;
         margin: 15px;
     }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .logo img{
+        width: 45px;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -321,12 +366,38 @@ button a{
 
     .centralize{
         padding: 80px 30px;
-        gap: 50px;
+        gap: 150px;
     }
 
     header nav ul li{
         margin: 8px;
         font-size: 12px;
+    }
+
+}
+
+
+
+
+@media screen and (max-height: 750px) and (max-width: 500px) {
+
+    .texto-home h1{
+        font-size: 50px;
+    }   
+        
+    .texto-home h3{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .airplane{
+        width: 80%;
+    }
+
+     .centralize{
+        padding: 50px 30px;
+        gap: 100px;
     }
 
 }

@@ -60,7 +60,7 @@ body ::selection{
 
 
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1920px) {
     section{
         padding: 60px 140px;
     }
@@ -68,7 +68,7 @@ body ::selection{
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     section{
         padding: 60px 80px;
     }
