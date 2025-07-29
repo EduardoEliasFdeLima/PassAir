@@ -7,7 +7,9 @@ window.addEventListener("DOMContentLoaded", () => {
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
    
-    const geometry = new THREE.SphereGeometry(2, 64, 64);
+
+    let raio = window.innerWidth <= 600 ? 2 : 2.5;
+    const geometry = new THREE.SphereGeometry(raio, 64, 64);
     //const texture = new THREE.TextureLoader().load('imgs/mundial.png'); // Substitua aqui
   
     const agora = new Date();
