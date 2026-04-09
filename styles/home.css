@@ -6,7 +6,7 @@ header{
 
 header nav{
     margin-top: 10px;
-    margin-left: 120px;
+    margin-left: 300px;
     position: absolute;
     width: 50%;
     display: flex;
@@ -154,11 +154,11 @@ button a{
 @media screen and (max-width: 2560px) {
 
     header nav{
-        margin-left: 200px;
+        margin-left: 300px;
     }
 
     .centralize{
-        padding: 0 200px;
+        padding: 0 300px;
         /* padding-right: 500px; */
         padding-right: 20%;
         gap: 0px;      
@@ -174,11 +174,11 @@ button a{
 
 @media screen and (max-width: 1920px) {
     .centralize{
-        padding: 60px 140px;
+        padding: 60px 200px;
         gap: 100px;
     }
      header nav{
-        margin-left: 140px;
+        margin-left: 200px;
     }
 
     .airplane img{
@@ -379,14 +379,13 @@ button a{
 
 
 
-@media screen and (max-height: 750px) and (max-width: 500px) {
+@media screen and (max-height: 750px) and (max-width: 400px) {
 
     .texto-home h1{
         font-size: 50px;
     }   
         
     .texto-home h3{
-        font-family: 'Inter';
         font-weight: 400;
         font-size: 30px;
     }
@@ -398,6 +397,18 @@ button a{
      .centralize{
         padding: 50px 30px;
         gap: 100px;
+    }
+
+  
+}
+
+
+
+@media screen and (max-width: 400px) {
+          
+    header nav ul li{
+        margin: 2px;
+        font-size: 10px;
     }
 
 }

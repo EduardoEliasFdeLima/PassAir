@@ -9,5 +9,6 @@ ScrollReveal().reveal('#girl', {
     origin: 'left',
     duration: 1000,
     distance: '10%',
+    delay: 400,
     reset: true
 });
